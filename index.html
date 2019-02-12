@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>A fantastical adventure</title>
+  </head>
+  <body>
+    <div class="container card" id="inputForm">
+      <h1>Answer the following questions:</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">Your name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="food">Select your favorite food:</label>
+            <select id="food">
+              <option value="0">--Please choose an option--</option>
+              <option value="pasta">pasta</option>
+              <option value="pizza">pizza</option>
+              <option value="chocolate">chocolate</option>
+              <option value="cake">german chocolate cake</option>
+              <option value="sushi">sushi</option>
+            </select>
+          </div>
+          <div>
+            <div>
+              <input type="radio" id="queen" name="music" value="queen">
+              <label for="queen">Queen</label>
+            </div>
+            <div>
+              <input type="radio" id="korn" name="music" value="korn">
+              <label for="korn">KORN</label>
+            </div>
+            <div>
+              <input type="radio" id="madonna" name="music" value="madonna">
+              <label for="madonna">Madonna</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="born">Date of birth:</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit purchase order.</button>
+        </form>
+      </div>
+    </div>
+      <div id="answers" class="container jumbotron shadow-lg p-3 mb-5 bg-white rounded">
+        <h1>Your answers are:</h1>
+      <p>Name: <span class="name"></span></p>
+      <p>Food: <span class="food"></span></p>
+      <p>Music: <span class="music"></span></p>
+      <p>DOB: <span class="born"></span></p>
+      <p>Favorite Color: <span class="color"></span></p>
+    </div>
+  </body>
+</html>
